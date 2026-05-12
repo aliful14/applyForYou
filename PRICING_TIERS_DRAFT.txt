@@ -1,0 +1,151 @@
+================================================================================
+APPLYFORYOU — THREE PRICING TIERS (WORKING SPEC)
+================================================================================
+Internal draft: align website, FAQ, intake, and contracts before launch.
+All amounts are CAD unless noted otherwise.
+
+--------------------------------------------------------------------------------
+FEES (AUTHORITATIVE FOR THIS DOCUMENT)
+--------------------------------------------------------------------------------
+  Basic:   CAD 220 one-time setup + CAD 25 per month (ongoing)
+  Mid:     CAD 350 one-time setup + CAD 25 per month (ongoing, no intro discount)
+  Premium: CAD 400 one-time setup + CAD 18 per month for the first two months,
+           then CAD 25 per month (ongoing). Disclose the step-up clearly on
+           pricing pages and at signup.
+
+--------------------------------------------------------------------------------
+APPLICATIONS (ALL TIERS — SAME COMMITMENT)
+--------------------------------------------------------------------------------
+  Every tier: at least 20 quality applications per week (subject to market
+  fit — you do not apply to irrelevant roles only to hit a number). Volume
+  is not what separates the tiers; documents, coaching, and outreach do.
+
+--------------------------------------------------------------------------------
+ALL TIERS — OPERATIONS YOU PROVIDE REGARDLESS OF PACKAGE
+--------------------------------------------------------------------------------
+  Weekly email summary of activity (roles targeted, submissions, anything
+  that needs the client’s input). Reasonable response SLA (e.g. reply within
+  24–48 business hours) unless you publish a faster Premium SLA.
+
+================================================================================
+TIER 1 — BASIC
+================================================================================
+POSITIONING
+  Entry tier: resume and cover letter polish, then consistent applications.
+  Clear limits reduce disputes and protect your time.
+
+ONE-TIME SETUP
+  CAD 220
+
+MONTHLY
+  CAD 25
+
+WHAT IS INCLUDED
+  Resume and cover letters
+    - Up to 3 resume variants (up to 3 target role families or keyword sets).
+    - Up to 3 cover letter variants aligned to those tracks.
+    - Define “variant” in client-facing terms (e.g. repositioned headline,
+      summary, and priority bullets vs full ground-up rewrite) and cap
+      revision rounds (e.g. 2 rounds per variant within 14–30 days of
+      delivery).
+
+  Applications
+    - 20+ quality applications per week, as defined in “Applications (all
+      tiers)” above.
+    - Discovery via job boards (e.g. LinkedIn, Indeed) with submission
+      mainly through employer career sites where practical. State whether
+      LinkedIn Easy Apply is in or out of scope for Basic.
+
+  Not included in Basic (reserve for higher tiers unless you add them here)
+    - LinkedIn profile rewrite beyond what is needed for applications.
+    - Mock interviews and structured interview coaching.
+    - Offer negotiation support.
+    - Cold email to recruiters or hiring managers on the client’s behalf.
+    - “Unlimited” rewrites or unlimited role pivots.
+
+================================================================================
+TIER 2 — MID
+================================================================================
+POSITIONING
+  Step up from Basic: same application engine, plus profile polish, one mock
+  interview, and interview-prep materials. Intended to sit clearly between
+  Basic and Premium on value (pricing psychology: anchor — do not use
+  “lure” in customer-facing copy; say “balanced upgrade” or similar).
+
+ONE-TIME SETUP
+  CAD 350
+
+MONTHLY
+  CAD 25 (no promotional discount on the monthly fee)
+
+WHAT IS INCLUDED
+  Everything in Basic, plus:
+    - LinkedIn profile cleanup (headline, About, and keyword alignment —
+      scope this so it is not open-ended).
+    - Interview prep: 1 mock interview (state length, e.g. 30–45 minutes,
+      and format: live video vs phone).
+    - Training materials to support interview prep (bound this: e.g. one
+      curated resource list plus short guidance, or up to 60 minutes of
+      curated content per month — pick what you can sustain).
+
+  Not included in Mid (keep for Premium unless you explicitly add here)
+    - Multiple mock interviews per month beyond the single session above.
+    - Offer negotiation.
+    - Ongoing cold email to recruiters and hiring managers at scale.
+
+================================================================================
+TIER 3 — PREMIUM
+================================================================================
+POSITIONING
+  Full package: more document variants, deeper interview support, offer
+  support, and capped outbound outreach — still with written limits so
+  scope stays deliverable.
+
+ONE-TIME SETUP
+  CAD 400
+
+MONTHLY
+  CAD 18 per month for the first two months, then CAD 25 per month. State
+  this everywhere clients see price (cards, FAQ, checkout, welcome email).
+
+WHAT IS INCLUDED
+  Everything in Mid, plus:
+    - Up to 5 resume variants and up to 5 matching cover letter variants
+      (same “variant” definition and revision caps as Basic, scaled to five
+      tracks — publish the cap in plain language).
+    - Interview prep: 3 mock interviews (define length and period, e.g.
+      3× 45 minutes per month or per rolling 30 days — choose one rule).
+    - Offer negotiation support (not legal advice): e.g. one active offer
+      review per month with written talking points — tighten to what you
+      will actually do.
+    - Cold email to recruiters and hiring managers: add a monthly cap
+      (e.g. 10–25 messages), client approval on templates, and rules
+      against misrepresentation.
+
+  Optional differentiators (add only if you will commit)
+    - Faster SLA than Basic/Mid for urgent interview deadlines.
+    - Curated learning plan beyond Mid’s materials (time cap per month).
+
+  Still excluded (unless you change strategy)
+    - Guarantees of interviews or employment (keep intake disclaimer).
+
+================================================================================
+CROSS-TIER CHECKLIST BEFORE YOU PUBLISH
+================================================================================
+  [ ] Same 20+ applications/week language appears once in a global block; no
+      tier claims “higher volume” than another.
+  [ ] Premium intro pricing is only “CAD 18 for first two months, then CAD
+      25” — remove any leftover “three months” or “CAD 17” references from
+      site and this file if they existed elsewhere.
+  [ ] Mid monthly is stated as CAD 25 with no discount.
+  [ ] “Variant” and revision rounds are defined for clients.
+  [ ] Cold outreach, mocks, negotiation, and training are all capped in
+      writing for Premium (and Mid where applicable).
+  [ ] Weekly email summary + SLA: stated as all tiers (or override if you
+      give Premium a faster published SLA only).
+  [ ] Website pricing section, FAQ, intake, and authorization/terms match
+      this spec.
+
+================================================================================
+END OF SPEC
+================================================================================

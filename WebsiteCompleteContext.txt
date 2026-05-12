@@ -1,0 +1,215 @@
+================================================================================
+  APPLYFORYOU — WEBSITE & RELATED CONTEXT (FULL SUMMARY)
+  Generated for: JobApplyProject
+  File: WebsiteCompleteContext.txt
+================================================================================
+
+
+1. BRAND & BUSINESS (HIGH LEVEL)
+--------------------------------------------------------------------------------
+
+Trade / marketing name: ApplyForYou
+
+What the service does:
+  - Done-for-you job applications for people in Canada (primary audience:
+    general Canadian job seekers, including newcomers, grads, career switchers).
+  - Resume polish (ATS-oriented), tailored cover letters, weekly applications
+    across LinkedIn, Indeed, Glassdoor, and company career sites.
+  - Client focuses on interviews and prep; the operator + team handle the
+    application grind.
+
+Pricing reflected on the website (as of site build):
+  - $200 CAD one-time: resume polish + multiple cover letters + LinkedIn quick
+    review.
+  - $75 CAD / month while actively applying (cancel anytime).
+  - Explicit on site: no job guarantee — activity-based promise only.
+
+Payment on site:
+  - None. Intake via Tally; payment via Interac e-Transfer after personal
+    email and agreement.
+
+Operator model:
+  - Sole proprietorship framing; optional Bangladesh contractor for manual
+    steps (mentioned in broader business plan, not required on landing page).
+
+
+2. WEBSITE LOCATION IN THIS REPO
+--------------------------------------------------------------------------------
+
+All static site files live under:
+
+  c:\Drive\git repo\JobApplyProject\website\
+
+Key files:
+  index.html          One-page marketing site (hero through final CTA + footer)
+  privacy.html        Plain-English privacy page (PIPEDA-aware)
+  README.md           How to edit, preview locally, deploy (Netlify / CF Pages)
+  robots.txt          Allow all; sitemap URL (update domain when live)
+  sitemap.xml         index + privacy (update base URL when live)
+  serve.ps1           PowerShell static HTTP server for local preview (Windows)
+  assets/css/styles.css   Full design system (CSS variables at top)
+  assets/js/main.js      Mobile nav toggle, FAQ accordion, footer year
+  assets/img/logo.svg    Nav + brand mark
+  assets/img/favicon.svg   Browser tab icon
+  assets/img/og-image.svg  Social share image (SVG; some platforms prefer PNG)
+
+
+3. TECH STACK (WEBSITE)
+--------------------------------------------------------------------------------
+
+  - Plain HTML5 + CSS3 + minimal vanilla JavaScript (no React, no build step).
+  - Google Fonts: Inter.
+  - Hosting intended: Netlify, Cloudflare Pages, or GitHub Pages (HTTPS +
+    custom domain applyforyou.ca preferred).
+  - Intake: external Tally form (URL placeholder in HTML).
+  - Optional chat-first: Calendly URL placeholder in final CTA section only.
+
+
+4. INFORMATION ARCHITECTURE (INDEX.HTML SECTIONS, TOP TO BOTTOM)
+--------------------------------------------------------------------------------
+
+  1) Sticky nav: logo, links (How it works, Pricing, FAQ, About), Get started
+  2) Hero: headline, subhead, Get started + How it works, trust line (no job
+     guarantee), decorative SVG (application progress bars)
+  3) Social proof strip: "Trusted by job seekers across Canada" + stat chips
+  4) Problem: hours lost, ATS, burnout
+  5) How it works: 4 cards (intake → materials → weekly apply → you interview)
+  6) What's included: checklist grid (resume, cover letters, LinkedIn review,
+     20+ apps/week, weekly summary, human QA, cancel anytime)
+  7) Pricing: single card $200 + $75/mo + disclaimer
+  8) Who it's for: 3 cards (newcomers, grads, switchers / burned out)
+  9) About: placeholder photo initials "AH" — replace with real <img> + copy
+ 10) FAQ: 10 <details> accordion items (honest answers)
+ 11) Final CTA: teal-style panel; Get started + Calendly secondary
+ 12) Footer: email, LinkedIn, Privacy, copyright, "Made in Canada"
+
+Privacy page: separate privacy.html linked from footer; mirrors nav CTA.
+
+
+5. PLACEHOLDERS YOU MUST REPLACE BEFORE LAUNCH
+--------------------------------------------------------------------------------
+
+In index.html AND privacy.html, find-and-replace (case-sensitive strings):
+
+  TALLY_FORM_URL         → Your real Tally form URL
+  CALENDLY_URL           → Your 15-minute Calendly booking URL
+  LINKEDIN_PROFILE_URL   → Your LinkedIn profile or company page URL
+  CONTACT_EMAIL          → e.g. hello@applyforyou.ca
+
+Also update Open Graph / sitemap / robots canonical host if domain is not
+applyforyou.ca (search for applyforyou.ca in index.html, robots.txt, sitemap.xml).
+
+
+6. COLOUR SCHEME (CURRENT — AFTER USER REQUESTED CHANGE FROM NAVY/AMBER)
+--------------------------------------------------------------------------------
+
+Defined in website/assets/css/styles.css under :root
+
+  Primary (buttons, links, key UI):     #0f766e  (teal)
+  Primary hover:                        #115e59
+  Accent (badges, final CTA primary):  #ea580c  (coral)
+  Accent hover:                        #c2410c
+  Success:                             #059669
+  Page background:                     #fafaf9  (warm stone)
+  Surfaces (cards):                    #ffffff
+  Body text:                           #1c1917
+  Muted text:                          #57534e
+  Borders:                             #e7e5e4 / #d6d3d1
+
+Previous scheme (for reference only — superseded):
+  Navy #0B3A6F, amber #F59E0B, cool gray backgrounds.
+
+Inline SVGs in index.html and assets/img/*.svg were updated to match teal +
+coral. theme-color meta tags set to #0f766e.
+
+
+7. SIGNUP / CLIENT FLOW (ALIGNED WITH "FLOW" DOCUMENT)
+--------------------------------------------------------------------------------
+
+  Visitor → website
+  → Clicks "Get started"
+  → Tally intake (name, email, phone optional, location, target role, resume
+     upload, notes)
+  → Operator notified by email
+  → Operator reviews resume (~5 min), emails or calls client
+  → Client agrees
+  → Operator sends authorization + Interac e-transfer instructions
+  → Client pays $200
+  → Work begins
+
+Monthly: e-transfer + weekly report email (off-site).
+
+Alternate path on site: "Book 15 min" (Calendly) only in final CTA block.
+
+
+8. RUNNING THE SITE LOCALLY (WINDOWS)
+--------------------------------------------------------------------------------
+
+  cd "c:\Drive\git repo\JobApplyProject\website"
+  .\serve.ps1
+
+  The script tries ports 5500 through 5509 and prints the working URL, e.g.
+  http://localhost:5501/
+
+  Force a port:
+    .\serve.ps1 -Port 8080
+
+  Stop: Ctrl+C in that terminal window.
+
+  If execution policy blocks scripts (first time):
+    Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+  Python / Node were not reliably available on the user's machine; serve.ps1
+  uses System.Net.HttpListener and does not require Python.
+
+
+9. ACCESSIBILITY & UX NOTES BAKED INTO THE BUILD
+--------------------------------------------------------------------------------
+
+  - Semantic regions: header, main, section, footer
+  - Nav toggle has aria-expanded / aria-label
+  - FAQ: native <details> with JS to keep only one open at a time
+  - prefers-reduced-motion respected in CSS
+  - Tap targets ~48px on primary buttons
+  - Absolute asset paths like /assets/... require a local server (not raw
+    file://) for correct loading
+
+
+10. WHAT IS DELIBERATELY NOT ON THE WEBSITE
+--------------------------------------------------------------------------------
+
+  - No client login / dashboard
+  - No Stripe or card checkout
+  - No blog
+  - No embedded Trello or internal ops tools
+  - No fake team stock photos
+
+
+11. DEPLOYMENT (SHORT)
+--------------------------------------------------------------------------------
+
+  See website/README.md for step-by-step Netlify drag-and-drop, Cloudflare
+  Pages from Git, and GitHub Pages. After deploy: set real domain DNS, replace
+  placeholders, test mobile + FAQ + all Get started links.
+
+
+12. RELATED FILES ELSEWHERE IN REPO
+--------------------------------------------------------------------------------
+
+  BUSINESS_PLAN.md / BUSINESS_PLAN.txt — broader business plan (agents,
+    pricing evolution, legal notes, marketing). Brand name ApplyForYou recorded
+    there.
+
+  Flow — user-maintained flow diagram text (website → Tally → email → payment).
+
+
+13. CURSOR / PLAN FILE (REFERENCE ONLY)
+--------------------------------------------------------------------------------
+
+  Original implementation plan lived under the user's Cursor plans folder as
+  applyforyou_website_plan_52c8d94c.plan.md — same structure as delivered site.
+
+
+================================================================================
+  END OF WebsiteCompleteContext.txt
+================================================================================

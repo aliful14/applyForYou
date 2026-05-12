@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApplyForYou — We apply to jobs for you, so you can focus on interviews</title>
+  <meta name="description" content="ApplyForYou handles resume polishing, tailored cover letters, and real job applications every week — across LinkedIn, Indeed, and company career sites. Based in Canada." />
+  <meta name="theme-color" content="#2563EB" />
+
+  <!-- Open Graph / social share -->
+  <meta property="og:title" content="ApplyForYou — We apply to jobs for you" />
+  <meta property="og:description" content="Resume polish, tailored cover letters, and weekly applications. You focus on interviews. Based in Canada." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://applyforyou.ca/" />
+  <meta property="og:image" content="/assets/img/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ApplyForYou — We apply to jobs for you" />
+  <meta name="twitter:description" content="Resume polish, tailored cover letters, and weekly applications. You focus on interviews." />
+  <meta name="twitter:image" content="/assets/img/og-image.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+
+  <!-- Fonts (Inter via Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="/" aria-label="ApplyForYou home">
+        <img class="nav__brand-mark" src="/assets/img/logo.svg" alt="" />
+        <span>ApplyForYou</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="nav__cta"><a class="btn btn--primary" href="#intake">Get started</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <span class="hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Based in Canada
+          </span>
+          <h1 class="hero__title">We apply to jobs for you — so you can focus on interviews.</h1>
+          <p class="hero__subtitle">
+            Resume polish, tailored cover letters, and real applications submitted every week across LinkedIn, Indeed, and company career sites. You prepare. We apply.
+          </p>
+          <div class="hero__cta-row">
+            <a class="btn btn--primary btn--lg" href="#intake">Get started</a>
+            <a class="btn btn--ghost btn--lg" href="#how">How it works</a>
+          </div>
+          <p class="hero__note">Consistent, high-quality applications submitted every week.</p>
+        </div>
+
+        <div class="hero__progress-card" role="img" aria-label="Typical weekly progress, illustrative">
+          <p class="hero__progress-card__label">Typical weekly progress</p>
+          <ul class="hero__progress-list">
+            <li class="hero__progress-item">
+              <div class="hero__progress-meta">
+                <span class="hero__progress-name">Applications sent</span>
+                <span class="hero__progress-pct">100%</span>
+              </div>
+              <div class="hero__progress-track" aria-hidden="true">
+                <div class="hero__progress-fill" style="width: 100%"></div>
+              </div>
+            </li>
+            <li class="hero__progress-item">
+              <div class="hero__progress-meta">
+                <span class="hero__progress-name">Resumes &amp; cover letters tailored</span>
+                <span class="hero__progress-pct">78%</span>
+              </div>
+              <div class="hero__progress-track" aria-hidden="true">
+                <div class="hero__progress-fill" style="width: 78%"></div>
+              </div>
+            </li>
+            <li class="hero__progress-item">
+              <div class="hero__progress-meta">
+                <span class="hero__progress-name">Responses received</span>
+                <span class="hero__progress-pct">54%</span>
+              </div>
+              <div class="hero__progress-track" aria-hidden="true">
+                <div class="hero__progress-fill" style="width: 54%"></div>
+              </div>
+            </li>
+            <li class="hero__progress-item">
+              <div class="hero__progress-meta">
+                <span class="hero__progress-name">Interviews booked</span>
+                <span class="hero__progress-pct">32%</span>
+              </div>
+              <div class="hero__progress-track" aria-hidden="true">
+                <div class="hero__progress-fill" style="width: 32%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOCIAL PROOF STRIP ========== -->
+    <section class="proof">
+      <div class="container proof__inner">
+        <div class="proof__label">Trusted by job seekers across Canada</div>
+        <div class="proof__stats">
+          <div class="proof__stat">
+            <span class="proof__stat-number">20+</span>
+            <span class="proof__stat-label">Applications / week</span>
+          </div>
+          <div class="proof__stat">
+            <span class="proof__stat-number">5h+</span>
+            <span class="proof__stat-label">Saved per day</span>
+          </div>
+          <div class="proof__stat">
+            <span class="proof__stat-number">100%</span>
+            <span class="proof__stat-label">Human reviewed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== THE PROBLEM ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">The problem</span>
+          <h2>Job hunting has quietly become a full‑time job.</h2>
+          <p>
+            Five to six hours a day rewriting resumes, tailoring cover letters, filling in the same fields across a dozen portals — and most applications vanish into an ATS without a human ever reading them. By the time the interview comes, you are exhausted.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">How it works</span>
+          <h2>Four steps. You run the interviews — we handle the rest.</h2>
+        </div>
+        <div class="grid grid--4">
+          <div class="card">
+            <div class="card__step">1</div>
+            <h3>Share your details</h3>
+            <p>Fill a short form and upload your resume. We review it personally and reply within 24 hours.</p>
+          </div>
+          <div class="card">
+            <div class="card__step">2</div>
+            <h3>We polish your materials</h3>
+            <p>ATS‑optimized resume and multiple cover letter templates tailored to your target roles.</p>
+          </div>
+          <div class="card">
+            <div class="card__step">3</div>
+            <h3>We apply every week</h3>
+            <p>20+ targeted applications per week across LinkedIn, Indeed, and company career sites — with a tailored cover letter for each role.</p>
+          </div>
+          <div class="card">
+            <div class="card__step">4</div>
+            <h3>You prepare and interview</h3>
+            <p>Every week you get a summary of jobs applied to. You focus on interview prep and showing up as your best self.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHAT IS INCLUDED ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">What's included</span>
+          <h2>Every plan includes the application engine.</h2>
+          <p>All tiers get the same weekly application volume and weekly email summary. Resume depth, coaching, and outreach scale up on <a href="#pricing">Mid and Premium</a>.</p>
+        </div>
+        <div class="included">
+          <div class="included__item">
+            <span class="included__check">✓</span>
+            <div><strong>20+ quality applications per week</strong><br/>Targeted to your role, location, and work model — we do not spam irrelevant postings.</div>
+          </div>
+          <div class="included__item">
+            <span class="included__check">✓</span>
+            <div><strong>Tailored materials per application</strong><br/>Resume and cover letter aligned to each role before submit.</div>
+          </div>
+          <div class="included__item">
+            <span class="included__check">✓</span>
+            <div><strong>Discovery across major boards</strong><br/>LinkedIn, Indeed, and employer career sites where practical.</div>
+          </div>
+          <div class="included__item">
+            <span class="included__check">✓</span>
+            <div><strong>Weekly summary email</strong><br/>Roles targeted, submissions, and anything we need from you — every tier.</div>
+          </div>
+          <div class="included__item">
+            <span class="included__check">✓</span>
+            <div><strong>Human review before submit</strong><br/>A real person checks quality before anything goes out.</div>
+          </div>
+          <div class="included__item">
+            <span class="included__check">✓</span>
+            <div><strong>Cancel anytime</strong><br/>No penalty. Pause or stop when you land an offer or need a break.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Pricing</span>
+          <h2>Three tiers. Same weekly application volume.</h2>
+          <p>Choose the depth of resume work, coaching, and outreach you want. All plans include <strong>20+ quality applications per week</strong>, a <strong>weekly email summary</strong>, and billing by <strong>Interac&nbsp;e‑Transfer</strong> after you agree to start.</p>
+        </div>
+        <div class="pricing-grid">
+
+          <!-- ---- Essentials ---- -->
+          <div class="pricing-col">
+            <div class="pricing-col__badge" aria-hidden="true"></div>
+            <article class="pricing-card">
+              <span class="pricing-card__pill">Essentials</span>
+              <h3 class="pricing-card__title">Essentials</h3>
+              <p class="pricing-card__price">$200 <span class="pricing-card__cad">CAD</span></p>
+              <p class="pricing-card__setup">One-time setup</p>
+              <hr class="pricing-card__hr" />
+              <div class="pricing-card__billing">
+                <p>Then <strong>$50/month</strong><br/>Cancel anytime.</p>
+              </div>
+              <ul class="pricing-card__list">
+                <li>Up to 3 resume & cover letter sets</li>
+                <li>20+ applications per week</li>
+                <li>Multi-platform job sourcing</li>
+                <li>Weekly activity summary</li>
+              </ul>
+              <div class="pricing-card__cta">
+                <a class="btn btn--primary btn--lg btn--block" href="#intake">Start with Essentials</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ---- Balanced ---- -->
+          <div class="pricing-col">
+            <div class="pricing-col__badge" aria-hidden="true"></div>
+            <article class="pricing-card">
+              <span class="pricing-card__pill">Balanced</span>
+              <h3 class="pricing-card__title">Balanced</h3>
+              <p class="pricing-card__price">$300 <span class="pricing-card__cad">CAD</span></p>
+              <p class="pricing-card__setup">One-time setup</p>
+              <hr class="pricing-card__hr" />
+              <div class="pricing-card__billing">
+                <p>Then <strong>$45/month</strong></p>
+                <p class="pricing-card__includes">All Essentials included, plus:</p>
+              </div>
+              <ul class="pricing-card__list">
+                <li>LinkedIn profile optimization</li>
+                <li>2 mock interviews</li>
+                <li>Interview prep materials</li>
+              </ul>
+              <div class="pricing-card__cta">
+                <a class="btn btn--primary btn--lg btn--block" href="#intake">Choose Balanced</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ---- Full Support (featured) ---- -->
+          <div class="pricing-col">
+            <div class="pricing-col__badge">
+              <span class="pricing-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Most Popular
+              </span>
+            </div>
+            <article class="pricing-card pricing-card--featured">
+              <span class="pricing-card__pill">Full Support</span>
+              <h3 class="pricing-card__title">Full Support</h3>
+              <p class="pricing-card__price">$350 <span class="pricing-card__cad">CAD</span></p>
+              <p class="pricing-card__setup">One-time setup</p>
+              <hr class="pricing-card__hr" />
+              <div class="pricing-card__billing">
+                <p><strong>$35/month</strong> for your <strong>first 2 months</strong>, then <strong>$45/month</strong>.</p>
+                <p class="pricing-card__includes">Includes all Balanced features, plus:</p>
+              </div>
+              <ul class="pricing-card__list">
+                <li>Up to 4 resume & cover letter sets</strong></li>
+                <li>3 mock interviews</li>
+                <li>Offer negotiation guidance</li>
+                <li>Cold outreach to recruiters and hiring managers</li>
+              </ul>
+              <div class="pricing-card__cta">
+                <a class="btn btn--primary btn--lg btn--block" href="#intake">Get Full Support</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- Trust strip -->
+        <div class="trust-strip">
+          <div class="trust-strip__lead">
+            <div class="trust-strip__shield">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="rgba(37,99,235,0.15)" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <p>We focus on consistency, quality, and momentum — the things that lead to offers. <a href="#intake">Cancel anytime.</a></p>
+          </div>
+          <div class="trust-strip__item">
+            <div class="trust-strip__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="rgba(37,99,235,0.15)" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10"/><path d="M20.49 15a9 9 0 01-14.85 3.36L1 14"/></svg>
+            </div>
+            <div>
+              <strong>Cancel anytime</strong>
+              <p>No long-term commitments.</p>
+            </div>
+          </div>
+          <div class="trust-strip__item">
+            <div class="trust-strip__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="rgba(37,99,235,0.15)" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <div>
+              <strong>Secure &amp; private</strong>
+              <p>Your data is safe with us.</p>
+            </div>
+          </div>
+          <div class="trust-strip__item">
+            <div class="trust-strip__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="rgba(37,99,235,0.15)" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <div>
+              <strong>Transparent pricing</strong>
+              <p>No hidden fees. Ever.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHO IT'S FOR ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Who it's for</span>
+          <h2>If any of these sound like you, we can help.</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="audience-card">
+            <h3>Newcomers to Canada</h3>
+            <p>You're navigating a new job market, unfamiliar resume conventions, and ATS systems that keep rejecting you. We translate your experience into what Canadian employers expect — without fabricating anything.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Recent graduates</h3>
+            <p>You're juggling studies, life, and the job hunt — and you know your resume could be better. We polish your materials and take applications off your plate so you can focus on interviews.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Career switchers &amp; burned‑out professionals</h3>
+            <p>You've been applying for months. You're tired. You've lost your rhythm. We bring the consistency back so you can show up fresh when the interviews come.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">About</span>
+          <h2>A real person, not a faceless service.</h2>
+        </div>
+        <div class="about">
+          <div class="about__photo" aria-hidden="true"><img src="/assets/img/logo.svg" alt="ApplyForYou logo" style="width:60%;height:60%;object-fit:contain;" /></div>
+          <div>
+            <p>
+              ApplyForYou was built because too many talented people burn out on job applications — ignored by ATS systems and rejected without a single human ever seeing their resume.
+            </p>
+            <p>
+              We're based in Canada, we've been through the hiring grind ourselves, and we run this as a small, hands‑on service — not a faceless platform. When you sign up, your resume is personally reviewed and your first email gets a real reply. Every application is checked by a real person before it's submitted.
+            </p>
+            <p>
+              <a href="CALENDLY_URL" target="_blank" rel="noopener">Prefer to chat? Book a free 15‑min call →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">FAQ</span>
+          <h2>Honest answers to the real questions.</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__summary">Do you guarantee I will get a job?</summary>
+            <div class="faq__body"><p>No. Nobody ethical can. We guarantee consistent, high‑quality applications every week — and the time back so you can focus on interviews. Most clients see their first interview within a few weeks of steady applications.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">Who actually applies — me or you?</summary>
+            <div class="faq__body"><p>We do, on your behalf, with your written consent. We send you an authorization form before we submit the first application, so everything is transparent and on the record.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">How do I pay?</summary>
+            <div class="faq__body"><p>Interac e‑Transfer. After we review your resume and you're ready to start, we email you the payment details. <strong>Setup</strong> is one‑time: <strong>$220</strong> (Basic), <strong>$350</strong> (Mid), or <strong>$400</strong> (Premium), depending on the tier you choose. <strong>Monthly</strong> is <strong>$25</strong> on Basic and Mid. On Premium, monthly is <strong>$18 for the first 2 months</strong>, then <strong>$25</strong>. Billing continues monthly until you ask us to stop.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">Can I cancel anytime?</summary>
+            <div class="faq__body"><p>Yes, any time, for any reason — no penalty and no awkward call. Just reply to any email and say "pause" or "cancel."</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">How do you protect my data?</summary>
+            <div class="faq__body"><p>Your resume and personal details are only used to apply to jobs on your behalf. Credentials are stored in an encrypted password manager. When you cancel, your data is deleted within 30 days. See the <a href="/privacy.html">privacy page</a> for details.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">What job portals do you cover?</summary>
+            <div class="faq__body"><p>LinkedIn, Indeed, Glassdoor, and most company career sites (including Workday, Greenhouse, and Lever portals). A few complex multi‑step portals may take longer, but we handle them manually when they matter for your target roles.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">Do you write cover letters from scratch for each job?</summary>
+            <div class="faq__body"><p>Yes — every cover letter is tailored to the specific role and company. No copy‑paste. That's the whole point.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__summary">How many applications per week?</summary>
+            <div class="faq__body"><p>Typically 20 or more, depending on your target role, location, and how many good matches exist in the market that week. We prioritize fit over volume — we won't spam applications to irrelevant roles just to hit a number.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== INTAKE (Jotform embed) ========== -->
+    <section class="section section--intake" id="intake">
+      <div class="container">
+        <header class="section__header">
+          <h2>Start your intake</h2>
+          <p>We review every submission personally — usually within 24 hours.</p>
+          <a class="btn btn--primary btn--lg" href="https://form.jotform.com/261077075520049" target="_blank" rel="noopener">Fill out the intake form →</a>
+        </header>
+      </div>
+    </section>
+
+    <!-- ========== FINAL CTA ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="final-cta">
+          <h2>Ready to get your time back?</h2>
+          <p>Fill a short form, upload your resume, and we'll review it personally within 24 hours. No payment until we've talked and you're ready.</p>
+          <div class="final-cta__buttons">
+            <a class="btn btn--primary btn--lg" href="#intake">Get started</a>
+            <a class="btn btn--ghost btn--lg" href="CALENDLY_URL" target="_blank" rel="noopener">Prefer to chat first? Book 15 min</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">ApplyForYou</div>
+          <p class="footer__meta">We apply to jobs for you, so you can focus on interviews.</p>
+        </div>
+        <ul class="footer__links">
+          <li><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></li>
+
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <div>© 2025 ApplyForYou. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
