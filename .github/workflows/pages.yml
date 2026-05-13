@@ -1,5 +1,11 @@
 # Publish the /website folder to GitHub Pages from the develop branch.
-# After first push: Repo → Settings → Pages → Build: GitHub Actions.
+#
+# ONE-TIME SETUP (required or deploy will fail):
+# 1. Repo → Settings → Pages
+# 2. Under "Build and deployment", set Source to "GitHub Actions" (NOT "Deploy from a branch").
+# 3. Save. Re-run this workflow from the Actions tab if needed.
+#
+# Optional: first run may ask you to approve the "github-pages" environment — click Approve.
 name: Deploy GitHub Pages
 
 on:
@@ -17,16 +23,20 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
           path: website
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
