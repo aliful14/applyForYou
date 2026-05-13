@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F7F7"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <g transform="translate(80,100)">
+    <rect x="0" y="0" width="110" height="110" rx="24" fill="#2563EB"/>
+    <path d="M28 82 L55 28 L82 82" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="37" y1="62" x2="73" y2="62" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="80" y="320" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="700" fill="#111111" letter-spacing="-1">We apply to jobs for you.</text>
+  <text x="80" y="400" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="500" fill="#6B7280">Resume polish. Tailored cover letters.</text>
+  <text x="80" y="450" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="500" fill="#6B7280">Real applications every week.</text>
+  <g transform="translate(80,530)">
+    <rect x="0" y="0" width="220" height="60" rx="30" fill="#2563EB"/>
+    <text x="110" y="40" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Based in Canada</text>
+  </g>
+  <text x="1120" y="590" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#6B7280">applyforyou.ca</text>
+</svg>
