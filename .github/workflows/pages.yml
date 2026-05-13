@@ -1,11 +1,12 @@
-# Publish the /website folder to GitHub Pages from the develop branch.
+# Publishes /website to the gh-pages branch. No GitHub "Actions" Pages API — avoids 404 setup errors.
 #
-# ONE-TIME SETUP (required or deploy will fail):
+# ONE-TIME GITHUB SETUP:
 # 1. Repo → Settings → Pages
-# 2. Under "Build and deployment", set Source to "GitHub Actions" (NOT "Deploy from a branch").
-# 3. Save. Re-run this workflow from the Actions tab if needed.
+# 2. Build and deployment → Source: "Deploy from a branch" (NOT "GitHub Actions")
+# 3. Branch: gh-pages, folder: / (root) → Save
+# 4. After the first workflow run creates gh-pages, pick that branch in step 3 if it was not listed yet.
 #
-# Optional: first run may ask you to approve the "github-pages" environment — click Approve.
+# Site URL: https://<user>.github.io/<repo>/  (or your custom domain once DNS + CNAME are set)
 name: Deploy GitHub Pages
 
 on:
@@ -14,29 +15,20 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/upload-pages-artifact@v3
+      - name: Publish site to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: website
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./website
+          publish_branch: gh-pages
